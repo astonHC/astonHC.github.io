@@ -1,0 +1,143 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    flex-wrap: wrap;
+}
+
+:root
+{
+    --bg-color: #161616;
+    --text-color: #ffffff;
+    --span-color: #1ee9ff;
+    --second-color: #0a5ada;
+    --h2-font: 3rem;
+}
+
+body
+{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+main-header
+{
+    position: fixed;
+    width: 100%;
+    top: 10;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all 1s ease-in-out;
+}
+
+.MAIN_LOGO
+{
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.SUB_LOGO
+{
+    color: var(--text-color);
+    position: absolute;
+    margin-bottom: -60px;
+    margin-left: 15px;
+    z-index: 1000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+span
+{
+    color: var(--span-color);
+}
+
+.NAVLIST
+{
+    display: flex;
+}
+
+.NAVLIST a
+{
+    color: var(--second-color);
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: all .45s ease;
+}
+
+.NAVLIST a:hover
+{
+    color: var(--span-color);
+}
+
+#MENU-ICON
+{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+section
+{
+    padding: 160px 15% 120px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/p3.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.SLIDE-TEXT
+{
+    margin-bottom: 20px;
+}
+
+.HELLO
+{
+    display: inline-block;
+    margin-right: -15px;
+    height: 32px;
+    padding: 0 0px;
+    line-height: 32px;
+    font-size: 60px;
+    font-weight: 1000;
+}
+
+.MY-NAME
+{
+    color: var(--text-color);
+    display: flex;
+    margin-right: 15px;
+    margin-bottom: -45px;
+    height: 32px;
+    line-height: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.HOME-TEXT h1
+{
+    font-size: 50px;
+    font-weight: 700;
+}
