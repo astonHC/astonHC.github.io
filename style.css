@@ -15,6 +15,7 @@
     --bg-color: #161616;
     --text-color: #ffffff;
     --span-color: #1ee9ff;
+    --button-color: #00011c;
     --second-color: #0a5ada;
     --h2-font: 3rem;
 }
@@ -100,7 +101,7 @@ section
     padding: 160px 15% 120px;
     height: 100vh;
     width: 100%;
-    background-image: url(./img/p3.jpeg);
+    background-color: #1d3b6b;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -128,8 +129,8 @@ section
 {
     color: var(--text-color);
     display: flex;
-    margin-right: 15px;
-    margin-bottom: -45px;
+    margin-right: 10px;
+    margin-bottom: -50px;
     height: 32px;
     line-height: 15px;
     font-size: 15px;
@@ -140,4 +141,31 @@ section
 {
     font-size: 50px;
     font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 0 0 8px;
 }
+
+.HOME-TEXT h3
+{
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.HOME-TEXT p
+{
+    color: var(--text-color);
+    font-size: var(--text-color);
+    line-height: 1.0;
+    margin-bottom: 40px;
+}
+
+.BUTTON
+{
+    display: inline-flex;
+    padding: 12px 28px;
+    background-color: var(--button-color);
+    align-items: center;
+    justify-content: center;
+}
+
