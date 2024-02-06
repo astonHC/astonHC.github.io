@@ -163,9 +163,37 @@ section
 .BUTTON
 {
     display: inline-flex;
+    font-size: 1rem;
+    font-weight: 600;
     padding: 12px 28px;
+    letter-spacing: 1px;
+    color: var(--text-color);
     background-color: var(--button-color);
     align-items: center;
     justify-content: center;
+    transition: all .5 ease;
 }
 
+
+
+main-header.sticky
+{
+    background: var(--bg-color);
+    padding: 12px 15%;
+}
+
+.ABOUT-SECTION
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.ABOUT-IMG img
+{
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
