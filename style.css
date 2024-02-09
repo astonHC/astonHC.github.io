@@ -369,7 +369,7 @@ input:checked + label .description
 {
     margin-top: -100px;
     opacity: 1 !important;
-    background-image: url(./img/p3.png);
+    background-image: url(./img/md.png);
 }
 
 .CARD[for="c1"]:hover
@@ -390,3 +390,56 @@ input:checked + label .description
     transition: background-color 1s ease-in;
     z-index: 1;
 }
+
+.CARD[for="c2"]
+{
+    margin-top: -200px;
+    opacity: 1 !important;
+    background-image: url(./img/Ghidra.png);
+}
+
+.CARD[for="c2"]:hover
+{
+    opacity: .5 !important;
+    transform: scale(1.05);
+}
+
+.CARD[for="c2"]:hover::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 0, 255, 0.351);
+    transition: background-color 1s ease-in;
+    z-index: 1;
+}
+
+.CARD[for="c3"]
+{
+    margin-top: -200px;
+    opacity: 1 !important;
+    background-image: url(./img/68k.jpg);
+}
+
+.CARD[for="c3"]:hover
+{
+    opacity: .5 !important;
+    transform: scale(1.05);
+}
+
+.CARD[for="c3"]:hover::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 0, 255, 0.351);
+    transition: background-color 1s ease-in;
+    z-index: 1;
+}
+
