@@ -15,8 +15,9 @@
     --bg-color: #161616;
     --text-color: #ffffff;
     --span-color: #1ee9ff;
+    --card-color: #4540dd7c;
     --button-color: #00011c;
-    --second-color: #0a5ada;
+    --second-color: #f3f8ff;
     --h2-font: 3rem;
 }
 
@@ -41,6 +42,19 @@ main-header
     border-bottom: 1px solid transparent;
     transition: all 1s ease-in-out;
 }
+
+main-header::before 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e1b4f; 
+    z-index: -1; 
+}
+
 
 .MAIN_LOGO
 {
@@ -75,7 +89,7 @@ span
 .NAVLIST a
 {
     color: var(--second-color);
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 500;
     margin: 0 10px;
     transition: all .45s ease;
@@ -139,7 +153,7 @@ section
 
 .HOME-TEXT h1
 {
-    font-size: 50px;
+    font-size: 100px;
     font-weight: 700;
     color: var(--text-color);
     list-style: 1.1;
@@ -162,6 +176,7 @@ section
 
 .BUTTON
 {
+    border-radius: 50px;
     display: inline-flex;
     font-size: 1rem;
     font-weight: 600;
@@ -195,5 +210,183 @@ main-header.sticky
     max-width: 530px;
     height: auto;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 50px;
+    transition: all .5 ease;
+}
+
+.ABOUT-TEXT h2
+{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.ABOUT-TEXT h4
+{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.ABOUT-TEXT p
+{
+    color: var(--text-color);
+    font-size: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+
+main-header.sticky
+{
+    background: var(--bg-color);
+    border-bottom: 1px solid #ffffff1a;
+    padding: 12px 15%;
+}
+
+.ABOUT-SECTION
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.PORTFOLIO-TEXT h1
+{
+    font-size: 100px;
+    text-align: justify;
+    font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
+
+.SKILLS-TEXT h1
+{
+    font-size: 100px;
+    text-align: justify;
+    font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
+
+.CARD-WRAPPER
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CARD-CONTAINER
+{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.CARD
+{
+    background: var(--card-color);
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.30, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, .5);
+}
+
+.CARD > .row
+{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.CARD > .row > .icon
+{
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.CARD > .row > .description
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transition: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p
+{
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+.description h4
+{
+    text-transform: uppercase;
+}
+
+input
+{
+    display: none;
+}
+
+input:checked + label
+{
+    width: 600px;
+}
+
+input:checked + label .description
+{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.CARD[for="c1"]
+{
+    margin-top: -100px;
+    opacity: 1 !important;
+    background-image: url(./img/p3.png);
+}
+
+.CARD[for="c1"]:hover
+{
+    opacity: .5 !important;
+    transform: scale(1.05);
+}
+
+.CARD[for="c1"]:hover::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 0, 255, 0.351);
+    transition: background-color 1s ease-in;
+    z-index: 1;
 }
