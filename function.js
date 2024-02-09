@@ -10,3 +10,12 @@ window.addEventListener("SCROLL", function()
 {
     HEADER.classList.toggle("sticky", window.scrollY > 100);
 });
+
+document.getElementById('CARD_1').addEventListener('click', function(event) 
+{ 
+    if (event.target === this) 
+    {
+        window.location.href = 'https://github.com/hazzaaclark/MD68000';
+    }
+});
+
