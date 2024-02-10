@@ -19,3 +19,20 @@ document.getElementById('CARD_1').addEventListener('click', function(event)
     }
 });
 
+document.getElementById('CARD_2').addEventListener('click', function(event) 
+{ 
+    if (event.target === this) 
+    {
+        window.location.href = 'https://github.com/hazzaaclark/gdiGhidra';
+    }
+});
+
+document.getElementById('CARD_3').addEventListener('click', function(event) 
+{ 
+    if (event.target === this) 
+    {
+        window.location.href = 'https://github.com/hazzaaclark/68K_ASM';
+    }
+});
+
+
