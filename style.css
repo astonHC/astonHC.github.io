@@ -12,6 +12,7 @@
 
 :root
 {
+    --main-color: #1d3b6b;
     --bg-color: #161616;
     --text-color: #ffffff;
     --span-color: #1ee9ff;
@@ -262,15 +263,6 @@ main-header.sticky
     margin: 0 0 8px;
 }
 
-.SKILLS-TEXT h1
-{
-    font-size: 100px;
-    text-align: justify;
-    font-weight: 700;
-    color: var(--text-color);
-    list-style: 1.1;
-    margin: 0 0 8px;
-}
 
 .CARD-WRAPPER
 {
@@ -443,3 +435,71 @@ input:checked + label .description
     z-index: 1;
 }
 
+.SKILLS-TEXT h1
+{
+    font-size: 100px;
+    text-align: justify;
+    font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
+
+.SKILLS
+{
+    background: var(--main-color);
+}
+
+.SKILLS-CONTENT h3, .SKILLS-CONTENT h4
+{
+    padding-bottom: 15px;
+}
+
+.SKILLS-CONTENT
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.box
+{
+    background: var(--button-color);
+    padding: 35px 45px;
+    border-radius: 25px;
+    transition: all .45s ease;
+}
+
+.box h3
+{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.box h4
+{
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.box:hover
+{
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+.CONTACT-TEXT h1
+{
+    font-size: 100px;
+    text-align: justify;
+    font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
