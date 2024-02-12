@@ -12,7 +12,7 @@
     <title>Harry Clark</title>
 
     <!----STYLE SHEET----->
-
+    
     <link rel="stylesheet" type="text/css" href="style.css"> 
 
     <!----ICON SHEETS----->
@@ -167,13 +167,42 @@
     <section class="CONTACT-ME" id="CONTACT-ME">
         <div class="CONTACT-TEXT">
             <h1>CONTACT ME</h1>
-            <div class="CONTACT-CONTENT">
+    
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <textarea id="message" name="message" rows="1" required></textarea>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <textarea id="message" name="message" rows="1" required></textarea>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </section>
+
+    <section class="RESUME" id="RESUME">
+        <div class="RESUME-TEXT">
+            <h1>RESUME</h1>
+
+            <embed class="pdf" src="./Harry Clark.pdf">
+            </embed>
+
+        </div>
+    </section>
+
+    <footer class="foot" id="contact">
+        <a class="legal t">© 2024 Harry Clark | Aston University | Birmingham | England</a>
+    </footer>
     
 
-    <script type="text/javascript" src="function.js">
-        
-    </script>
+    <script type="text/javascript" src="function.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 </body>
 
 </html>
