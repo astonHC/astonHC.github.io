@@ -497,7 +497,7 @@ input:checked + label .description
 .CONTACT-TEXT h1
 {
     font-size: 100px;
-    text-align: justify;
+    text-align: center;
     font-weight: 700;
     color: var(--text-color);
     list-style: 1.1;
