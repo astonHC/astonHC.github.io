@@ -6,10 +6,10 @@
 
 const HEADER = document.querySelector("main-header");
 
-window.addEventListener("SCROLL", function()
+window.onscroll = () =>
 {
-    HEADER.classList.toggle("sticky", window.scrollY > 100);
-});
+    HEADER.classList.toggle('sticky', window.scrollY > 100);
+}
 
 document.getElementById('CARD_1').addEventListener('click', function(event) 
 { 
@@ -34,5 +34,4 @@ document.getElementById('CARD_3').addEventListener('click', function(event)
         window.location.href = 'https://github.com/hazzaaclark/68K_ASM';
     }
 });
-
 
