@@ -575,3 +575,137 @@ input:checked + label .description
 {
     color: var(--second-color);
 }
+
+@media (max-width: 600px) 
+{
+   main-header 
+   {
+        padding: 15px; 
+   }
+
+    .MAIN_LOGO 
+    {
+        font-size: 25px; 
+    }
+
+    .SUB_LOGO 
+    {
+        display: none;  
+    }
+
+    .NAVLIST 
+    {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .NAVLIST a 
+    {
+        margin: 10px 0; 
+    }
+
+    #MENU-ICON {
+        display: block;
+    }
+
+    section 
+    {
+        padding: 80px 15% 60px; 
+    }
+
+    .HOME-TEXT h1 
+    {
+        font-size: 60px; 
+    }
+
+
+    .ABOUT-SECTION 
+    {
+        grid-template-columns: 1fr; 
+    }
+
+    .ABOUT-IMG img 
+    {
+        max-width: 100%; 
+        height: auto;
+        border-radius: 0; 
+    }
+
+    .ABOUT-TEXT h2 
+    {
+        font-size: 2rem; 
+    }
+
+    .ABOUT-TEXT h4 
+    {
+        font-size: 18px; 
+    }
+
+    .PORTFOLIO-TEXT h1 
+    {
+        font-size: 60px; 
+    }
+
+    .CARD-WRAPPER,
+    .CARD-CONTAINER 
+    {
+        height: auto; 
+        flex-direction: column;
+    }
+
+    .CARD 
+    {
+        width: 100%; 
+        margin: 20px 0; 
+    }
+
+    .CARD[for="c1"],
+    .CARD[for="c2"],
+    .CARD[for="c3"] 
+    {
+        margin-top: 0; 
+    }
+
+    .SKILLS-TEXT h1 
+    {
+        font-size: 60px; 
+    }
+
+    .SKILLS-CONTENT 
+    {
+        grid-template-columns: 1fr; 
+    }
+
+    .box 
+    {
+        padding: 25px 35px; 
+    }
+
+    .CONTACT-TEXT h1 
+    {
+        font-size: 60px; 
+    }
+
+    .CONTACT-ME form label,
+    .CONTACT-ME form input,
+    .CONTACT-ME form textarea,
+    .CONTACT-ME form button 
+    {
+        width: 100%; 
+    }
+
+    .RESUME-TEXT h1 
+    {
+        font-size: 60px; 
+    }
+
+    .pdf 
+    {
+        min-width: 100%; 
+    }
+
+    .foot 
+    {
+        margin-top: 2%;     
+    }
+}
