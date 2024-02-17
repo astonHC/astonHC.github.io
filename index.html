@@ -42,9 +42,6 @@
             <li><a href="#CONTACT-ME">CONTACT ME</a></li>
             <li><a href="#RESUME">RESUME</a></li>
         </ul>
-
-        <div class="bx bx-menu" id="MENU-ICON">
-        </div>
     </main-header>
 
     <!----HOME SECTION----->
@@ -125,6 +122,7 @@
                 </label>
             </div>
         </div>
+        </div>
     </section>
 
     <section class="SKILLS" id="SKILLS">
@@ -176,9 +174,18 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <textarea id="message" name="message" rows="1" required></textarea>
-    
+
+                <label for="message">Email Subject:</label>
+                <textarea id="message" name="message" rows="2" required></textarea>
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="contact">Preferred Contact Method</label>
+                <select id="contact" name="contact">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                </select>
     
                 <button type="submit">Submit</button>
             </form>
@@ -191,15 +198,13 @@
 
             <embed class="pdf" src="./Harry Clark.pdf">
             </embed>
-
         </div>
+        <footer class="foot" id="contact">
+            <a class="legal t">© 2024 Harry Clark | Aston University | Birmingham | England</a>
+        </footer>
     </section>
 
-    <footer class="foot" id="contact">
-        <a class="legal t">© 2024 Harry Clark | Aston University | Birmingham | England</a>
-    </footer>
-    
-
+</section>
     <script type="text/javascript" src="function.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
