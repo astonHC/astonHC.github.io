@@ -14,9 +14,11 @@
     <!----STYLE SHEET----->
     
     <link rel="stylesheet" type="text/css" href="style.css"> 
+    
 
     <!----ICON SHEETS----->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
 
@@ -162,6 +164,42 @@
         </div>
     </section>
 
+    <section class="PROGRAMMING SKILLS" id="PROG">
+        <div class="PROG-TEXT">
+            <h1>PROGRAMMING LANGUAGES</h1>
+
+            <div class="LANGUAGE-BAR">
+                <div class="LANGUAGE">
+                    <div class="C">C</div>
+                    <div class="PROGRESS" style="width: 40%;"></div>
+                    <div class="PERCENT">50%</div>
+                </div>
+            </div>
+            <div class="LANGUAGE-BAR">
+                <div class="LANGUAGE">
+                    <div class="ASM">Assembly</div>
+                    <div class="PROGRESS" style="width: 10%;"></div>
+                    <div class="PERCENT">20%</div>
+                </div>
+            </div>
+            <div class="LANGUAGE-BAR">
+                <div class="LANGUAGE">
+                    <div class="JAVA">Java</div>
+                    <div class="PROGRESS" style="width: 0%;"></div>
+                    <div class="PERCENT">10%</div>
+                </div>
+            </div>
+            <div class="LANGUAGE-BAR">
+                <div class="LANGUAGE">
+                    <div class="CPP">C++</div>
+                    <div class="PROGRESS" style="width: 10%;"></div>
+                    <div class="PERCENT">20%</div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
     <section class="CONTACT-ME" id="CONTACT-ME">
         <div class="CONTACT-TEXT">
             <h1>CONTACT ME</h1>
@@ -169,6 +207,10 @@
             <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+                <textarea id="message" name="message" rows="1" required></textarea>
+
+                <label for="name">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
                 <textarea id="message" name="message" rows="1" required></textarea>
     
                 <label for="email">Email:</label>
@@ -206,8 +248,12 @@
 
 </section>
     <script type="text/javascript" src="function.js"></script>
+
+    <!---BOOTSTRAP INCLUDES--->
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
 </body>
 
 </html>
