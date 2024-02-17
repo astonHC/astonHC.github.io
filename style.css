@@ -101,16 +101,6 @@ span
     color: var(--span-color);
 }
 
-#MENU-ICON
-{
-    font-size: 35px;
-    color: var(--text-color);
-    z-index: 10001;
-    cursor: pointer;
-    margin-left: 25px;
-    display: none;
-}
-
 section
 {
     padding: 160px 15% 120px;
@@ -212,7 +202,14 @@ main-header.sticky
     height: auto;
     width: 100%;
     border-radius: 50px;
-    transition: all .5 ease;
+    -webkit-transition: opacity .5 ease-in-out;
+    transition: opacity .5 ease-in-out;
+}
+
+.ABOUT-IMG img::before
+{
+    -webkit-animation: removeCover 0.5s linear 0.2s both;
+    animation: removeCover 0.5s linear 0.2s both;
 }
 
 .ABOUT-TEXT h2
@@ -284,7 +281,7 @@ main-header.sticky
 .CARD
 {
     background: var(--card-color);
-    width: 80px;
+    width: 150px;
     border-radius: .75rem;
     background-size: cover;
     cursor: pointer;
@@ -566,7 +563,7 @@ input:checked + label .description
 
 .foot
 {
-    margin-top: 5%;
+    margin-top: 110%;
     padding-top: 2%;
     text-align: center;
 }
