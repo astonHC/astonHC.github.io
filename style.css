@@ -491,6 +491,105 @@ input:checked + label .description
     cursor: pointer;
 }
 
+.PROG-TEXT h1
+{
+    font-size: 100px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
+
+.LANGUAGE-BAR
+{
+    width: 30%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.LANGUAGE
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.LANGUAGE i
+{
+    font-size: 50px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.PROGRESS
+{
+    background-color: #5b34db;
+    height: 30px;
+    width: 10px;
+    transition: width 1s ease;
+    flex-grow: .25;
+}
+
+.PERCENT
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+    color: #fff;
+}
+
+.C
+{
+    flex-grow: 1;
+    text-align: left;
+    margin-right: 10px;
+    justify-content: center;
+    font-weight: bold;
+    color: #0022ff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.033);
+
+}
+
+.JAVA
+{
+    flex-grow: 1;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #ff6f00;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.033);
+}
+
+.ASM
+{
+    flex-grow: 1;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #8a3c00;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.033);
+}
+
+.CPP
+{
+    flex-grow: 1;
+    text-align: left;
+    margin-right: 10px;
+    justify-content: center;
+    font-weight: bold;
+    color: #ff0066;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.033);
+
+}
+
+
 .CONTACT-TEXT h1
 {
     font-size: 100px;
